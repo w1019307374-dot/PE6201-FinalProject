@@ -1,0 +1,12 @@
+[
+  {"input":"Someone used my card without permission and spent $3000","expected":"ESCALATE"},
+  {"input":"I would like a replacement debit card","expected":"MONITOR"},
+  {"input":"$800 disappeared from my account overnight","expected":"ESCALATE"},
+  {"input":"Can you explain the $2 monthly fee on my statement?","expected":"MONITOR"},
+  {"input":"My account is locked and I cannot access my salary","expected":"ESCALATE"},
+  {"input":"I got a phone call from someone saying they are from your fraud department asking for my OTP. Is that normal?","expected":"MONITOR"},
+  {"input":"There is a $12 charge on my card I do not recognise, probably a free trial that converted","expected":"MONITOR"},
+  {"input":"I want to close my account and transfer my balance to another bank","expected":"MONITOR"},
+  {"input":"A cheque I deposited bounced and the payee is threatening to take me to court","expected":"ESCALATE"},
+  {"input":"Help me update my mailing address on file","expected":"MONITOR"}
+]

@@ -1,0 +1,51 @@
+{
+  "working_qa": [
+    {
+      "q": "How long do I have to report an unauthorized transaction?",
+      "retrieved": [
+        "Lost or stolen card",
+        "Unauthorized transaction claim"
+      ],
+      "answer": "You have 60 days from the statement date to report an unauthorized transaction. This is stated in the \"Unauthorized transaction claim\" policy."
+    },
+    {
+      "q": "What is the fee for requesting a printed statement older than 7 years?",
+      "retrieved": [
+        "Account statement request",
+        "Account closure"
+      ],
+      "answer": "The fee for requesting a printed statement older than 7 years is $20. This is stated in the [Account statement request] policy."
+    },
+    {
+      "q": "My mortgage repayment holiday - how many times can I take one and how long can it last?",
+      "retrieved": [
+        "Loan repayment holiday",
+        "Transaction limits"
+      ],
+      "answer": "You may apply for a repayment holiday once every 3 years for up to 6 months during the loan tenure. (Policy: Loan repayment holiday)"
+    },
+    {
+      "q": "I need to dispute an ATM that didn't give me cash. How long should I wait before filing?",
+      "retrieved": [
+        "ATM dispute",
+        "Transaction limits"
+      ],
+      "answer": "You should wait 24 hours for automatic reversal. If the amount is not reversed after that, you should file a dispute within 7 days. This is outlined in the ATM dispute policy."
+    },
+    {
+      "q": "What happens if I break my fixed deposit early - is my principal safe?",
+      "retrieved": [
+        "Fixed deposit early withdrawal",
+        "Transaction limits"
+      ],
+      "answer": "If you break your fixed deposit early, your principal is never at risk. However, there will be a penalty of 1 month's interest. This is stated in the \"Fixed deposit early withdrawal\" policy."
+    }
+  ],
+  "failure": {
+    "q": "I lost my debit card on holiday and someone spent $800 on it at a shop abroad. Am I liable, and was I supposed to tell the bank before travelling?",
+    "retrieved_k1": [
+      "Lost or stolen card"
+    ],
+    "answer": "You are responsible for transactions made before reporting the lost card. Since you lost your card, you should report it immediately via the 24-hour hotline. After reporting, the bank covers all losses. There is no mention in the policy about needing to inform the bank before traveling. (Policy: Lost or stolen card)"
+  }
+}

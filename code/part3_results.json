@@ -1,0 +1,248 @@
+{
+  "v1": {
+    "n": 10,
+    "l1_pass_rate": 0.0,
+    "l2_pass_rate": 1.0,
+    "rows": [
+      {
+        "input": "Someone used my card without permission and spent $3000",
+        "expected": "ESCALATE",
+        "raw": "**Ticket Triage: Urgent Fraud Report**\n\n**Customer Issue:** Unauthorized transaction of $3000 on credit card.\n\n**Priority Level:** High\n\n**Recommended Actions:**\n1. **Immediate Response:** Advise the customer to contact their bank or credit card issuer immediately to report the unauthorized transaction and dispute the charges.\n2. **Card Lock/Replacement:** Suggest that the customer request a temporary lock on their card or a replacement card to prevent further unauthorized transactions.\n3. **Fraud Investigation:** Inform the customer that the bank will likely initiate a fraud investigation and may require additional information from them.\n4. **Monitor Account:** Encourage the customer to monitor their account for any further unauthorized transactions and report them as well.\n5. **Follow-Up:** Offer to follow up with the customer to ensure their issue is resolved and provide any additional support needed.\n\n**Additional Notes:** Ensure the customer feels supported and provide reassurance that unauthorized transactions can typically be resolved through their bank's fraud protection policies.",
+        "l1": {
+          "valid_json": false
+        },
+        "l1_pass": false,
+        "l2_pass": true
+      },
+      {
+        "input": "I would like a replacement debit card",
+        "expected": "MONITOR",
+        "raw": "**Ticket Triage: Replacement Debit Card Request**\n\n**Priority Level:** Medium\n\n**Customer Issue:** Request for a replacement debit card.\n\n**Next Steps:**\n1. Verify the customer's identity and account details.\n2. Confirm the reason for the replacement (lost, stolen, damaged, etc.).\n3. Inform the customer of any fees associated with the replacement, if applicable.\n4. Process the request for a new debit card.\n5. Provide an estimated timeline for when the new card will arrive.\n6. Offer assistance with any other questions or concerns the customer may have.\n\n**Response Template:**\n\"Thank you for reaching out. I can assist you with your request for a replacement debit card. Could you please confirm the reason for the replacement and provide your account details for verification? Once I have that information, I can process your request and let you know when to expect your new card. If you have any other questions, feel free to ask!\"",
+        "l1": {
+          "valid_json": false
+        },
+        "l1_pass": false,
+        "l2_pass": true
+      },
+      {
+        "input": "$800 disappeared from my account overnight",
+        "expected": "ESCALATE",
+        "raw": "**Ticket Triage: Urgent Financial Issue**\n\n**Customer Concern:** $800 missing from account\n\n**Priority Level:** High\n\n**Action Required:**\n1. Verify the customer's account details and transaction history.\n2. Check for any unauthorized transactions or account activity.\n3. Advise the customer to temporarily freeze their account if suspicious activity is detected.\n4. Provide guidance on how to report the issue formally and initiate an investigation.\n5. Ensure the customer is aware of any potential next steps and timelines for resolution.\n\n**Next Steps:**\n- Contact the customer for additional information (e.g., account number, recent transactions).\n- Escalate to the financial support team for immediate assistance.\n\n**Customer Communication:**\n- Acknowledge the urgency of the situation.\n- Reassure the customer that their issue will be addressed promptly.",
+        "l1": {
+          "valid_json": false
+        },
+        "l1_pass": false,
+        "l2_pass": true
+      },
+      {
+        "input": "Can you explain the $2 monthly fee on my statement?",
+        "expected": "MONITOR",
+        "raw": "This ticket should be triaged as a billing inquiry. It requires clarification regarding the $2 monthly fee on the customer's statement. The customer may need assistance in understanding the nature of this fee, whether it is a new charge, a service fee, or related to a specific service or account feature. It is important to provide a detailed explanation and ensure the customer understands their billing statement.",
+        "l1": {
+          "valid_json": false
+        },
+        "l1_pass": false,
+        "l2_pass": true
+      },
+      {
+        "input": "My account is locked and I cannot access my salary",
+        "expected": "ESCALATE",
+        "raw": "**Ticket Triage:**\n\n**Issue:** Account locked, unable to access salary.\n\n**Priority Level:** High (Immediate attention required due to financial implications)\n\n**Recommended Actions:**\n1. Verify the identity of the customer to ensure security.\n2. Check the reason for the account lock (e.g., suspicious activity, multiple failed login attempts).\n3. Provide instructions on how to unlock the account (e.g., password reset, security questions).\n4. If necessary, escalate to the technical support team for further assistance.\n5. Inform the customer about the expected timeline for resolution and any alternative methods to access their salary if applicable.\n\n**Customer Communication:**\n- Acknowledge the urgency of the situation.\n- Assure the customer that their issue will be addressed promptly.\n- Provide a contact number or email for immediate assistance if needed.\n\n**Follow-Up:** Ensure the customer is updated on the progress of their ticket and confirm when the issue is resolved.",
+        "l1": {
+          "valid_json": false
+        },
+        "l1_pass": false,
+        "l2_pass": true
+      },
+      {
+        "input": "I got a phone call from someone saying they are from your fraud department asking for my OTP. Is that normal?",
+        "expected": "MONITOR",
+        "raw": "This situation raises a red flag. Legitimate companies, including fraud departments, will never ask for your One-Time Password (OTP) or any sensitive information over the phone. It is likely that this call was a phishing attempt. \n\nPlease do not provide any personal information or OTP to the caller. I recommend you take the following steps:\n\n1. **Do not engage further with the caller.** Hang up immediately.\n2. **Verify the legitimacy of the call.** Contact the company's official customer service number to inquire if they made any calls to you.\n3. **Monitor your accounts.** Keep an eye on your bank and credit accounts for any unauthorized transactions.\n4. **Report the incident.** If you feel threatened or if you have provided any information, report it to your local authorities and the company\u2019s fraud department.\n\nIf you need further assistance, please let us know!",
+        "l1": {
+          "valid_json": false
+        },
+        "l1_pass": false,
+        "l2_pass": true
+      },
+      {
+        "input": "There is a $12 charge on my card I do not recognise, probably a free trial that converted",
+        "expected": "MONITOR",
+        "raw": "**Ticket Triage:**\n\n**Customer Issue:** Unrecognized $12 charge on card, possibly due to a free trial conversion.\n\n**Priority Level:** Medium\n\n**Action Steps:**\n1. Verify the charge details (merchant name, date, etc.) to identify the source.\n2. Check the customer's account for any active subscriptions or free trials that may have converted to a paid plan.\n3. Provide the customer with information on how to cancel the subscription if they do not wish to continue.\n4. Offer assistance in disputing the charge if it is unauthorized.\n5. Follow up with the customer to ensure their issue is resolved.\n\n**Response Template:**\n\"Thank you for reaching out. I understand that you have a $12 charge on your card that you do not recognize. I will look into this for you. Could you please provide me with the date of the charge and any additional details? This will help us identify the source and assist you further.\"",
+        "l1": {
+          "valid_json": false
+        },
+        "l1_pass": false,
+        "l2_pass": true
+      },
+      {
+        "input": "I want to close my account and transfer my balance to another bank",
+        "expected": "MONITOR",
+        "raw": "**Ticket Triage: Account Closure and Balance Transfer Request**\n\n**Customer Request:** The customer wants to close their account and transfer their balance to another bank.\n\n**Action Required:**\n1. **Verify Customer Identity:** Ensure the customer is authorized to close the account.\n2. **Account Closure Process:** Provide the customer with the necessary steps and any forms required to initiate the account closure.\n3. **Balance Transfer Instructions:** Inform the customer about the process for transferring their balance to another bank, including any potential fees or waiting periods.\n4. **Confirm Final Steps:** Ensure the customer understands any final actions they need to take and confirm their request for account closure.\n\n**Priority Level:** Medium (as it involves account closure and potential financial implications)\n\n**Next Steps:**\n- Respond to the customer with the required information and instructions.\n- Follow up to ensure the process is completed smoothly.",
+        "l1": {
+          "valid_json": false
+        },
+        "l1_pass": false,
+        "l2_pass": true
+      },
+      {
+        "input": "A cheque I deposited bounced and the payee is threatening to take me to court",
+        "expected": "ESCALATE",
+        "raw": "**Ticket Triage:**\n\n**Customer Issue:** Bounced cheque and potential legal action from the payee.\n\n**Priority Level:** High - Legal implications and potential financial consequences.\n\n**Recommended Actions:**\n1. **Gather Information:**\n   - Request details about the cheque (amount, date, payee).\n   - Ask if the customer has already communicated with the payee regarding the bounced cheque.\n\n2. **Advise on Next Steps:**\n   - Suggest the customer contact their bank to understand why the cheque bounced and if there are any options to resolve the issue.\n   - Recommend that the customer communicate with the payee to explain the situation and seek a resolution before it escalates to legal action.\n\n3. **Legal Advice:**\n   - Inform the customer that they may want to seek legal advice to understand their rights and obligations regarding the bounced cheque and any potential court action.\n\n4. **Documentation:**\n   - Advise the customer to keep all documentation related to the cheque and any communications with the payee.\n\n5. **Follow-Up:**\n   - Schedule a follow-up to check on the situation and provide further assistance if needed.\n\n**Escalation:** If the customer expresses immediate concern or fear of legal action, escalate to a supervisor or legal department for further assistance.",
+        "l1": {
+          "valid_json": false
+        },
+        "l1_pass": false,
+        "l2_pass": true
+      },
+      {
+        "input": "Help me update my mailing address on file",
+        "expected": "MONITOR",
+        "raw": "**Ticket Triage: Update Mailing Address Request**\n\n**Priority Level:** Medium  \n**Category:** Account Update  \n**Customer Information Needed:**  \n- Current mailing address  \n- New mailing address  \n- Account verification details (e.g., account number, email associated with the account)\n\n**Next Steps:**  \n1. Respond to the customer requesting the current mailing address and the new mailing address they wish to update to.\n2. Ask for any necessary account verification details to ensure security.\n3. Once received, proceed with updating the mailing address in the system and confirm the update with the customer.\n\n**Response Template:**  \n\"Thank you for reaching out! To assist you with updating your mailing address, could you please provide your current mailing address, the new mailing address you would like to use, and any account verification details? Once I have this information, I can proceed with the update. Thank you!\"",
+        "l1": {
+          "valid_json": false
+        },
+        "l1_pass": false,
+        "l2_pass": true
+      }
+    ]
+  },
+  "v2": {
+    "n": 10,
+    "l1_pass_rate": 1.0,
+    "l2_pass_rate": 1.0,
+    "rows": [
+      {
+        "input": "Someone used my card without permission and spent $3000",
+        "expected": "ESCALATE",
+        "raw": "{\"label\": \"ESCALATE\", \"reason\": \"Unauthorized transaction indicates potential fraud.\"}",
+        "l1": {
+          "valid_json": true,
+          "has_label_field": true,
+          "label_in_vocab": true,
+          "label_correct": true
+        },
+        "l1_pass": true,
+        "l2_pass": true
+      },
+      {
+        "input": "I would like a replacement debit card",
+        "expected": "MONITOR",
+        "raw": "{\"label\": \"MONITOR\", \"reason\": \"Routine request for a replacement debit card.\"}",
+        "l1": {
+          "valid_json": true,
+          "has_label_field": true,
+          "label_in_vocab": true,
+          "label_correct": true
+        },
+        "l1_pass": true,
+        "l2_pass": true
+      },
+      {
+        "input": "$800 disappeared from my account overnight",
+        "expected": "ESCALATE",
+        "raw": "{\"label\": \"ESCALATE\", \"reason\": \"money missing without explanation\"}",
+        "l1": {
+          "valid_json": true,
+          "has_label_field": true,
+          "label_in_vocab": true,
+          "label_correct": true
+        },
+        "l1_pass": true,
+        "l2_pass": true
+      },
+      {
+        "input": "Can you explain the $2 monthly fee on my statement?",
+        "expected": "MONITOR",
+        "raw": "{\"label\": \"MONITOR\", \"reason\": \"Customer is inquiring about a routine fee on their statement.\"}",
+        "l1": {
+          "valid_json": true,
+          "has_label_field": true,
+          "label_in_vocab": true,
+          "label_correct": true
+        },
+        "l1_pass": true,
+        "l2_pass": true
+      },
+      {
+        "input": "My account is locked and I cannot access my salary",
+        "expected": "ESCALATE",
+        "raw": "{\"label\": \"ESCALATE\", \"reason\": \"The account is locked, preventing access to funds.\"}",
+        "l1": {
+          "valid_json": true,
+          "has_label_field": true,
+          "label_in_vocab": true,
+          "label_correct": true
+        },
+        "l1_pass": true,
+        "l2_pass": true
+      },
+      {
+        "input": "I got a phone call from someone saying they are from your fraud department asking for my OTP. Is that normal?",
+        "expected": "MONITOR",
+        "raw": "{\"label\": \"MONITOR\", \"reason\": \"Customer is inquiring about a potential fraud situation.\"}",
+        "l1": {
+          "valid_json": true,
+          "has_label_field": true,
+          "label_in_vocab": true,
+          "label_correct": true
+        },
+        "l1_pass": true,
+        "l2_pass": true
+      },
+      {
+        "input": "There is a $12 charge on my card I do not recognise, probably a free trial that converted",
+        "expected": "MONITOR",
+        "raw": "{\"label\": \"MONITOR\", \"reason\": \"The charge may be a routine inquiry about a possible free trial conversion.\"}",
+        "l1": {
+          "valid_json": true,
+          "has_label_field": true,
+          "label_in_vocab": true,
+          "label_correct": true
+        },
+        "l1_pass": true,
+        "l2_pass": true
+      },
+      {
+        "input": "I want to close my account and transfer my balance to another bank",
+        "expected": "MONITOR",
+        "raw": "{\"label\": \"MONITOR\", \"reason\": \"Customer is making a routine request to close an account.\"}",
+        "l1": {
+          "valid_json": true,
+          "has_label_field": true,
+          "label_in_vocab": true,
+          "label_correct": true
+        },
+        "l1_pass": true,
+        "l2_pass": true
+      },
+      {
+        "input": "A cheque I deposited bounced and the payee is threatening to take me to court",
+        "expected": "ESCALATE",
+        "raw": "{\"label\": \"ESCALATE\", \"reason\": \"The payee's threat of legal action requires immediate attention.\"}",
+        "l1": {
+          "valid_json": true,
+          "has_label_field": true,
+          "label_in_vocab": true,
+          "label_correct": true
+        },
+        "l1_pass": true,
+        "l2_pass": true
+      },
+      {
+        "input": "Help me update my mailing address on file",
+        "expected": "MONITOR",
+        "raw": "{\"label\": \"MONITOR\", \"reason\": \"Routine request to update mailing address.\"}",
+        "l1": {
+          "valid_json": true,
+          "has_label_field": true,
+          "label_in_vocab": true,
+          "label_correct": true
+        },
+        "l1_pass": true,
+        "l2_pass": true
+      }
+    ]
+  },
+  "l1_delta": 1.0,
+  "l2_delta": 0.0
+}

@@ -1,0 +1,15 @@
+{
+  "sklearn": {
+    "accuracy": 1.0,
+    "train_time_s": 0.02,
+    "predict_per_sample_ms": 0.0
+  },
+  "api": {
+    "accuracy": 1.0,
+    "avg_latency_s": 1.96,
+    "total_cost_usd": 0.001813,
+    "cost_per_call": 1.813e-05
+  },
+  "n_test": 100,
+  "n_train": 300
+}
